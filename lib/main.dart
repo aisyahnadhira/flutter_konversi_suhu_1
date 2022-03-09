@@ -95,7 +95,8 @@ class _MyHomePageState extends State<MyHomePage> {
             targetHitung(
                 selectedDropdown: selectedDropdown,
                 listSatuanSuhu: listSatuanSuhu,
-                onDropdownChanged: onDropdownChanged),
+                onDropdownChanged: onDropdownChanged,
+                onPressed: konversiSuhu),
             SizedBox(
               height: 10,
             ),
@@ -110,15 +111,15 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               height: 10,
             ),
-            konversi(onPressed: konversiSuhu),
-            SizedBox(
-              height: 10,
-            ),
+            // konversi(onPressed: konversiSuhu),
+            // SizedBox(
+            //   height: 10,
+            // ),
             Text(
               "Riwayat Konversi",
               style: TextStyle(
                 fontSize: 20,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w700,
               ),
             ),
             SizedBox(

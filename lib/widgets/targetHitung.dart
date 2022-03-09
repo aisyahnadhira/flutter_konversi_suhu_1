@@ -6,11 +6,13 @@ class targetHitung extends StatelessWidget {
     required this.selectedDropdown,
     required this.listSatuanSuhu,
     required this.onDropdownChanged,
+    required this.onPressed,
   }) : super(key: key);
 
   final String selectedDropdown;
   final List<String> listSatuanSuhu;
   final Function onDropdownChanged;
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class targetHitung extends StatelessWidget {
       }).toList(),
       onChanged: (value) {
         onDropdownChanged(value);
+        onPressed();
       },
     );
   }

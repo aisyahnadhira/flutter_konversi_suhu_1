@@ -14,7 +14,7 @@ class hasilHitung extends StatelessWidget {
       "$hasilPerhitungan",
       style: TextStyle(
         fontSize: 30,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w700,
       ),
     );
   }
